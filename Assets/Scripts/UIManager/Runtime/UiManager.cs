@@ -16,7 +16,7 @@ namespace UIManager.Runtime
 
         public void Init(IScreensProvider screensProvider)
         {
-            _screens = screensProvider.GetScreens().Select(e => Instantiate(e, transform));
+            _screens = screensProvider.GetScreens();
             foreach (var screen in _screens)
             {
                 screen.gameObject.SetActive(false);
@@ -24,6 +24,16 @@ namespace UIManager.Runtime
             _screensMap = _screens.ToDictionary(e => e.ModelType, e => e);
         }
         
+        public void Init(IEnumerable<IScreensProvider> screensProvider)
+        {
+            _screens = screensProvider.SelectMany(e=>e.GetScreens()).ToArray();
+            foreach (var screen in _screens)
+            {
+                screen.gameObject.SetActive(false);
+            }
+            _screensMap = _screens.ToDictionary(e => e.ModelType, e => e);
+        }
+
         public void Show<TModel>() where TModel : BaseViewModel, IPersistentUiModel
         {
             if (_screensMap.TryGetValue(typeof(TModel), out var screen))
