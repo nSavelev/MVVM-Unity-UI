@@ -1,0 +1,12 @@
+﻿{
+  "name": "com.nsavelev.mvvm-uimanager",
+  "displayName": "MVVM UiManager",
+  "author": { "name": "nSavelev", "url": "https://github.com/nSavelev" },
+  "version": "1.0.0",
+  "unity": "2018.4",
+  "description": "My simple MVVM Screens management realization for Unity",
+  "keywords": [ "UI", "MVVM"],
+  "license": "MIT",
+  "category": "UI",
+  "dependencies": {}
+}
