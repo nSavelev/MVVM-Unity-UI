@@ -1,13 +1,1 @@
-﻿{
-  "name": "com.nsavelev.mvvmui",
-  "displayName": "MVVM UI Manager",
-  "author": { "name": "nSavelev", "url": "https://github.com/nSavelev" },
-  "version": "1.0.1",
-  "unity": "2018.4",
-  "unityRelease": "36f1",
-  "description": "Simple MVVM Ui Manager implementation",
-  "keywords": [ "UI", "MVVM" ],
-  "license": "MIT",
-  "category": "UI",
-  "dependencies": {}
-}
+﻿{  "name": "com.nsavelev.mvvmui",  "displayName": "MVVM UI Manager",  "author": { "name": "nSavelev", "url": "https://github.com/nSavelev" },  "version": "1.0.1",  "unity": "2018.4",  "description": "Simple MVVM Ui Manager implementation",  "keywords": [ "UI", "MVVM" ],  "license": "MIT",  "category": "UI",  "dependencies": {}}
